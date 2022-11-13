@@ -348,6 +348,7 @@ Mobile CSS
 Footer
 ********/
 ion-footer {
+  background: rgb(8, 74, 87);
   --ion-toolbar-background: rgb(8, 74, 87);
 }
 
