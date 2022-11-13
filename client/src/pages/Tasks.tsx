@@ -238,7 +238,7 @@ const Tasks: React.FC = (props) => {
                 return (
                   <IonRow class="ion-padding ion-text-center">
                     <IonCol size="12">
-                      <h1>Add Tasks</h1>
+                      <h2>Add Tasks</h2>
                       <form onSubmit={handleSubmit} className="taskSubmit">
                         <IonItem>
                           <IonLabel position="stacked">
@@ -333,13 +333,13 @@ const Tasks: React.FC = (props) => {
                                               </span>
                                             </span>
                                             <span className="labelTitle">
-                                              Assigned To:
+                                              For:
                                               <span className="labelValue">
                                                 {t.assignedTo}
                                               </span>
                                             </span>
                                             <span className="labelTitle">
-                                              Created By:
+                                              By:
                                               <span className="labelValue">
                                                 <a href={`/profile`}>
                                                   {users.username}
@@ -409,13 +409,13 @@ const Tasks: React.FC = (props) => {
                                               </span>
                                             </span>
                                             <span className="labelTitle">
-                                              Assigned To:
+                                              For:
                                               <span className="labelValue">
                                                 {t.assignedTo}
                                               </span>
                                             </span>
                                             <span className="labelTitle">
-                                              Created By:
+                                              By:
                                               <span className="labelValue">
                                                 <a href={`/profile`}>
                                                   {users.username}
@@ -499,13 +499,13 @@ const Tasks: React.FC = (props) => {
                                             </span>
                                           </span>
                                           <span className="labelTitle">
-                                            Assigned To:
+                                            For:
                                             <span className="labelValue">
                                               {t.assignedTo}
                                             </span>
                                           </span>
                                           <span className="labelTitle">
-                                            Created:
+                                            By:
                                             <span className="labelValue">
                                               {taskCreatedDate}
                                             </span>
@@ -562,13 +562,13 @@ const Tasks: React.FC = (props) => {
                                             </span>
                                           </span>
                                           <span className="labelTitle">
-                                            Assigned To:
+                                            For:
                                             <span className="labelValue">
                                               {t.assignedTo}
                                             </span>
                                           </span>
                                           <span className="labelTitle">
-                                            Created:
+                                            By:
                                             <span className="labelValue">
                                               {taskCreatedDate}
                                             </span>

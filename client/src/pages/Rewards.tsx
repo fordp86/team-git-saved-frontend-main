@@ -149,7 +149,7 @@ const Rewards: React.FC = () => {
             {({ user }) => {
               if (hasJWT() && users.roleId === "parent") {
                 return (
-                  <IonRow>
+                  <IonRow class="ion-padding ion-text-center">
                     <IonCol size="12">
                       <h2>Add Reward</h2>
                       <form onSubmit={handleSubmit} className="rewardSubmit">
