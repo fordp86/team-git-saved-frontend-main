@@ -282,7 +282,7 @@ const Profile: React.FC = () => {
                                                   viewEditPage(`${t.taskId}`)
                                                 }
                                               >
-                                                Edit Task
+                                                Edit
                                               </IonButton>
                                               <IonButton
                                                 color="danger"
@@ -290,7 +290,7 @@ const Profile: React.FC = () => {
                                                   removeTask(`${t.taskId}`)
                                                 }
                                               >
-                                                Delete Task
+                                                Delete
                                               </IonButton>
                                             </IonItem>
                                           );

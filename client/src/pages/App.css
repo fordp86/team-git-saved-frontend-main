@@ -10,6 +10,10 @@ div {
   color: rgb(0, 0, 0);
 }
 
+a {
+  color: rgb(8, 74, 87);
+}
+
 body {
   font-size: 18px;
   line-height: 24px;
@@ -102,6 +106,13 @@ Task Page Styles
 .dissSubmit ion-item,
 .rewardSubmit ion-item {
   --background: rgb(253, 248, 232);
+  color: rgb(0, 0, 0);
+}
+
+.taskSubmit ion-item:hover,
+.dissSubmit ion-item:hover,
+.rewardSubmit ion-item:hover {
+  --background: rgb(8, 74, 87);
   color: rgb(0, 0, 0);
 }
 
@@ -306,20 +317,98 @@ Meet The Devs
 Mobile CSS
 ***********/
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 380px) {
+@media (min-width: 360px) and (max-width: 738px) {
+  ion-header ion-toolbar {
+    display: block;
+    min-height: 44px;
+    --min-height: 134px;
+  }
+
+  .list-ios {
+    background: none;
+  }
+
+  .ios ion-card-title {
+    font-size: 22px;
+  }
+
+  .profileCard ion-card {
+    width: 100%;
+  }
+
   ion-list.profile ion-label {
     text-align: center;
   }
+
+  ion-list.homeTasklist ion-checkbox {
+    margin-inline: 0;
+    --size: 16px;
+  }
+
   ion-list.homeTasklist ion-checkbox ion-label {
-    display: block;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .item.sc-ion-label-ios-h,
+  .item .sc-ion-label-ios-h {
+    margin: 0 5px 0 0;
+  }
+
+  ion-list.homeTasklist .item.sc-ion-label-md-h,
+  ion-list.homeTasklist .item .sc-ion-label-md-h {
+    width: auto;
+    display: grid;
+  }
+
+  ion-list.homeTasklist ion-label span {
+    font-size: 16px;
+  }
+
+  .item.sc-ion-label-md-h,
+  .item .sc-ion-label-md-h {
+    width: 100%;
+    display: grid;
+  }
+
+  .item.sc-ion-label-ios-h span,
+  .item .sc-ion-label-ios-h span {
+    display: table-cell;
+    font-size: 12px;
     white-space: pre-wrap;
+    text-align: center;
   }
 }
 
 /*  Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .thedevs ion-card-content {
+@media (min-width: 740px) and (max-width: 960px) {
+  ion-list.homeTasklist ion-checkbox {
+    margin-inline: 5px;
+    --size: 20px;
+  }
+
+  ion-list.homeTasklist ion-checkbox ion-label {
     font-size: 16px;
+    text-align: center;
+  }
+
+  .item.sc-ion-label-ios-h,
+  .item .sc-ion-label-ios-h {
+    margin: 0 10px 0 0;
+  }
+
+  .item.sc-ion-label-md-h,
+  .item .sc-ion-label-md-h {
+    width: 100%;
+    display: inline;
+  }
+
+  .item.sc-ion-label-ios-h span,
+  .item .sc-ion-label-ios-h span {
+    display: inline;
+    font-size: 16px;
+    white-space: pre-wrap;
+    text-align: center;
   }
 }
 
@@ -348,8 +437,8 @@ Mobile CSS
 Footer
 ********/
 ion-footer {
-  background: rgb(8, 74, 87);
   --ion-toolbar-background: rgb(8, 74, 87);
+  background: rgb(8, 74, 87);
 }
 
 ion-footer ion-img {
