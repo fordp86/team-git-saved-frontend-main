@@ -1,0 +1,301 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  color: rgb(0, 0, 0);
+}
+
+body {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+ion-content {
+  --background: rgb(209, 245, 242);
+}
+
+ion-menu ion-content {
+  --background: rgb(255, 255, 255);
+}
+
+ion-thumbnail {
+  max-width: 280px;
+  --border-radius: 10px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+ion-button {
+  --background: rgb(8, 74, 87);
+  color: rgb(255, 255, 255);
+}
+
+/*****************
+Welcome Page Styles
+****************/
+.welcomeText {
+  color: rgb(0, 0, 0);
+}
+
+.welcomeText h2 {
+  font-style: italic;
+  color: rgb(8, 74, 87);
+}
+
+/*****************
+Task Page Styles
+****************/
+
+/* Task Form */
+
+.taskSubmit ion-item,
+.dissSubmit ion-item,
+.rewardSubmit ion-item {
+  --background: rgb(253, 248, 232);
+  color: rgb(0, 0, 0);
+}
+
+.taskSubmit ion-item ion-input,
+.dissSubmit ion-item ion-input,
+.rewardSubmit ion-item ion-input {
+  --border-bottom: 1px solid black;
+  --padding-top: 25px;
+}
+
+.taskSubmit ion-select,
+.dissSubmit ion-select,
+.rewardSubmit ion-select {
+  max-width: 100%;
+}
+
+.taskSubmit ion-button,
+.dissSubmit ion-button,
+.rewardSubmit ion-button {
+  --background: rgb(8, 74, 87);
+}
+
+.dissContent.list-md {
+  background: none;
+  color: rgb(255, 255, 255);
+}
+/*** Profile Page **/
+.profileCard ion-card {
+  margin: 0 auto;
+  width: 80%;
+  padding: 25px;
+}
+
+.profileCard ion-button {
+  width: 100%;
+}
+
+.profileCard ion-card-header {
+  font-size: 18px;
+}
+
+.rewardProgress ion-item {
+  --background: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-align: center;
+}
+
+.rewardProgress ion-label {
+  color: rgb(0, 0, 0);
+}
+
+.rewardProgress ion-item .item-counter {
+  margin-left: 0;
+  margin-inline-start: none;
+}
+
+/*** End Profile page **/
+
+/*************
+Discussion Page
+***************/
+.discussionInfo {
+  padding: 5px 0;
+}
+.discussionInfo ion-item {
+  --background: rgba(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+ion-card {
+  --background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+ion-card-title {
+  color: rgb(0, 0, 0);
+}
+/* Task List */
+
+ion-list.homeTasklist {
+  background: none;
+}
+
+ion-list.homeTasklist ion-label span {
+  padding: 5px;
+  font-size: 20px;
+}
+
+ion-list.homeTasklist.profile ion-label span {
+  padding: 2px;
+  text-align: center;
+}
+
+ion-list.homeTasklist ion-label span.labelTitle {
+  font-weight: bold;
+}
+
+ion-list.homeTasklist ion-label span.labelValue {
+  font-weight: normal;
+}
+
+ion-list.homeTasklist ion-item {
+  --background: rgb(255, 255, 255);
+  background: none;
+  --background-activated: solid;
+  --background-focused: rgb(8, 74, 87);
+  --background-hover: rgb(8, 74, 87);
+  --background-activated-opacity: 0;
+  --background-focused-opacity: 1;
+  --background-hover-opacity: 1;
+  color: rgb(0, 0, 0);
+  --border-radius: 20px;
+  margin: 10px 0 10px 0;
+  text-transform: capitalize;
+}
+
+ion-list.homeTasklist ion-item:hover {
+  color: rgb(0, 0, 0);
+}
+
+ion-list.homeTasklist ion-item-options {
+  background: rgb(255, 255, 255);
+  border-bottom: none;
+}
+ion-list.homeTasklist ion-checkbox {
+  --background: rgb(253, 248, 232);
+  --border-color: rgb(8, 74, 87);
+  --border-radius: 20px;
+}
+
+ion-list.profile ion-label span.labelValue,
+ion-list.profile ion-label span.labelTitle {
+  font-size: 16px;
+}
+
+ion-list.dissContent ion-card-title {
+  font-size: 20px;
+  color: rgb(8, 74, 87);
+}
+
+ion-list.dissContent ion-card-subtitle {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.tasklist ion-list,
+.options ion-list {
+  background: none;
+}
+
+.tasklist ion-item {
+  --background: none;
+  color: rgb(0, 0, 0);
+}
+
+.options {
+  max-width: 380px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.options ion-item {
+  --background: none;
+  --border: none;
+}
+
+/** SignUp and SignIn Page **/
+.signupform,
+.signinform {
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+  /* text-align: center; */
+  background-color: rgb(253, 248, 232);
+  padding: 3%;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+.color {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 2px solid gray;
+}
+
+ion-modal ion-header {
+  --ion-toolbar-background: white;
+}
+
+/************
+Meet The Devs
+*************/
+
+.thedevs ion-card {
+  padding: 25px;
+}
+
+.thedevs ion-card-content {
+  font-size: 16px;
+}
+
+/***********
+Mobile CSS
+***********/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 380px) {
+  ion-list.profile ion-label {
+    text-align: center;
+  }
+  ion-list.homeTasklist ion-checkbox ion-label {
+    display: block;
+    white-space: pre-wrap;
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .thedevs ion-card-content {
+    font-size: 16px;
+  }
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .thedevs ion-card-content {
+    font-size: 16px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .thedevs ion-card-content {
+    font-size: 16px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .thedevs ion-card-content {
+    font-size: 16px;
+  }
+}
