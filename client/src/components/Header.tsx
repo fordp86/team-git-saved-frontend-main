@@ -7,7 +7,6 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import "./Header.css";
 
 interface ContainerProps {}
 

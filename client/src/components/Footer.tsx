@@ -6,7 +6,6 @@ import {
   IonRow,
   IonToolbar,
 } from "@ionic/react";
-import "./Footer.css";
 
 interface ContainerProps {}
 
