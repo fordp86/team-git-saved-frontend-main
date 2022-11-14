@@ -5,7 +5,7 @@ import RewardsContext from "./RewardsContext";
 
 export const RewardsProvider = (props) => {
   const [reward, setReward] = useState([]);
-  const baseUrl = "https://gitsavedbkend.onrender.com/rewards/";
+  const baseUrl = "https://hometasktic.herokuapp.com/rewards/";
 
   useEffect(() => {
     async function fetchData() {

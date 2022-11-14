@@ -5,7 +5,7 @@ import TaskContext from "./TaskContext";
 
 export const TaskProvider = (props) => {
   const [task, setTask] = useState([]);
-  const baseUrl = "https://gitsavedbkend.onrender.com/tasks/";
+  const baseUrl = "https://hometasktic.herokuapp.com/tasks/";
 
   useEffect(() => {
     async function fetchData() {

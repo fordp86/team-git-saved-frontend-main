@@ -6,7 +6,7 @@ import DiscussionContext from "./DiscussionContext";
 export const DiscussionProvider = (props) => {
   const [discussion, setPost] = useState([]);
 
-  const baseUrl = "https://gitsavedbkend.onrender.com/discussion/";
+  const baseUrl = "https://hometasktic.herokuapp.com/discussion/";
 
   useEffect(() => {
     async function fetchData() {

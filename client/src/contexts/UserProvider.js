@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import UserContext from "./UserContext";
 
 export const UserProvider = (props) => {
-  const baseUrl = "https://gitsavedbkend.onrender.com/users/";
+  const baseUrl = "https://hometasktic.herokuapp.com/users/";
 
   const [user, setUser] = useState([]);
 
