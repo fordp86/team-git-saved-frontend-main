@@ -6,7 +6,7 @@ import DiscussionContext from "./DiscussionContext";
 export const DiscussionProvider = (props) => {
   const [discussion, setPost] = useState([]);
 
-  const baseUrl = "https://team-git-saved-backend-main.vercel.app/discussion/";
+  const baseUrl = "https://gitsavedbkend.onrender.com/discussion/";
 
   useEffect(() => {
     async function fetchData() {

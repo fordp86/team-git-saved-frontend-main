@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import HouseholdContext from "./HouseholdContext";
 
 export const HouseholdProvider = (props) => {
-  const baseUrl = "https://team-git-saved-backend-main.vercel.app/household/";
+  const baseUrl = "https://gitsavedbkend.onrender.com/household/";
 
   const [household, setHousehold] = useState([]);
 
