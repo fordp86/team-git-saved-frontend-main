@@ -191,7 +191,72 @@ const DiscussionBoard: React.FC = () => {
               <IonList className="dissContent">
                 <UserContext.Consumer>
                   {({ user }) => {
-                    if (hasJWT()) {
+                    if (hasJWT() && userInfo.roleId === "child") {
+                      return (
+                        <DiscussionContext.Consumer>
+                          {({ discussion }) => {
+                            return (
+                              <div>
+                                {discussion.map((p: any) => {
+                                  let taskCreated = parseISO(p.createdAt);
+                                  let taskCreatedDate = format(
+                                    taskCreated,
+                                    "M/dd/yy"
+                                  );
+                                  return (
+                                    <IonCard key={p.discussionId}>
+                                      <IonCardHeader>
+                                        <div className="discussionInfo">
+                                          {user.map((u) => {
+                                            if (
+                                              u.roleId === "parent" &&
+                                              userInfo.householdName ===
+                                                u.householdName
+                                            ) {
+                                              return (
+                                                <IonItem key={u.userId}>
+                                                  <IonAvatar slot="start">
+                                                    {!u.profileImg ? (
+                                                      <img
+                                                        alt={userInfo.name}
+                                                        src="https://ionicframework.com/docs/img/demos/avatar.svg"
+                                                      />
+                                                    ) : (
+                                                      <img
+                                                        alt={u.name}
+                                                        src={u.profileImg}
+                                                      />
+                                                    )}
+                                                  </IonAvatar>
+                                                  <IonLabel>
+                                                    Post By: {u.name}
+                                                    &nbsp;
+                                                    <span>
+                                                      On: {taskCreatedDate}
+                                                    </span>
+                                                  </IonLabel>
+                                                </IonItem>
+                                              );
+                                            }
+                                          })}
+                                        </div>
+
+                                        <IonCardTitle>
+                                          {p.headline}
+                                        </IonCardTitle>
+                                        <IonCardSubtitle>
+                                          {p.content}
+                                        </IonCardSubtitle>
+                                      </IonCardHeader>
+                                    </IonCard>
+                                  );
+                                })}
+                              </div>
+                            );
+                          }}
+                        </DiscussionContext.Consumer>
+                      );
+                    } else {
                       return (
                         <DiscussionContext.Consumer>
                           {({ discussion }) => {

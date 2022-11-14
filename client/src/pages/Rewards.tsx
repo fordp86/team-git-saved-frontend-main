@@ -191,33 +191,51 @@ const Rewards: React.FC = () => {
               return (
                 <IonRow>
                   {reward.map((r: any) => {
-                    return (
-                      <IonCol
-                        size-lg="3"
-                        size-xs="12"
-                        class="ion-text-center"
-                        key={r.rewardId}
-                      >
-                        <IonCard className="ion-padding">
-                          <IonCardHeader>
-                            <IonCardTitle>{r.title}</IonCardTitle>
-                            <IonCardSubtitle>{r.pointValue}</IonCardSubtitle>
-                          </IonCardHeader>
-                          <IonButton
-                            color="tertiary"
-                            onClick={() => vieweditRewards(`${r.rewardId}`)}
-                          >
-                            Edit
-                          </IonButton>
-                          <IonButton
-                            color="danger"
-                            onClick={() => removeRewards(`${r.rewardId}`)}
-                          >
-                            Delete
-                          </IonButton>
-                        </IonCard>
-                      </IonCol>
-                    );
+                    if (hasJWT() && users.roleId === "child") {
+                      return (
+                        <IonCol
+                          size-lg="3"
+                          size-xs="12"
+                          class="ion-text-center"
+                          key={r.rewardId}
+                        >
+                          <IonCard className="ion-padding">
+                            <IonCardHeader>
+                              <IonCardTitle>{r.title}</IonCardTitle>
+                              <IonCardSubtitle>{r.pointValue}</IonCardSubtitle>
+                            </IonCardHeader>
+                          </IonCard>
+                        </IonCol>
+                      );
+                    } else {
+                      return (
+                        <IonCol
+                          size-lg="3"
+                          size-xs="12"
+                          class="ion-text-center"
+                          key={r.rewardId}
+                        >
+                          <IonCard className="ion-padding">
+                            <IonCardHeader>
+                              <IonCardTitle>{r.title}</IonCardTitle>
+                              <IonCardSubtitle>{r.pointValue}</IonCardSubtitle>
+                            </IonCardHeader>
+                            <IonButton
+                              color="tertiary"
+                              onClick={() => vieweditRewards(`${r.rewardId}`)}
+                            >
+                              Edit
+                            </IonButton>
+                            <IonButton
+                              color="danger"
+                              onClick={() => removeRewards(`${r.rewardId}`)}
+                            >
+                              Delete
+                            </IonButton>
+                          </IonCard>
+                        </IonCol>
+                      );
+                    }
                   })}
                 </IonRow>
               );

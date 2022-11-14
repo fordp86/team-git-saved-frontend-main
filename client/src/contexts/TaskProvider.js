@@ -5,7 +5,7 @@ import TaskContext from "./TaskContext";
 
 export const TaskProvider = (props) => {
   const [task, setTask] = useState([]);
-  const baseUrl = "https://team-git-saved-backend-main.vercel.app/tasks/";
+  const baseUrl = "http://localhost:3001/tasks/";
 
   useEffect(() => {
     async function fetchData() {

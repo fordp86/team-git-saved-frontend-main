@@ -45,7 +45,7 @@ import EditProfile from "./components/EditProfile";
 import Profile from "./pages/Profile";
 import { RewardsProvider } from "./contexts/RewardsProvider";
 import { HouseholdProvider } from "./contexts/HouseholdProvider";
-
+import { QuoteProvider } from "./contexts/QuoteProvider";
 import EditReward from "./components/EditReward";
 
 import AppMenu from "./components/AppMenu";
@@ -142,7 +142,9 @@ const App: React.FC = () => (
           <AddPhotos/>
         </Route> */}
           <Route exact path="/">
-            <Redirect to="/welcome" />
+            <QuoteProvider>
+              <Redirect to="/welcome" />
+            </QuoteProvider>
           </Route>
         </IonRouterOutlet>
       </IonReactRouter>

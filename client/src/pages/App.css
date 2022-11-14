@@ -113,7 +113,7 @@ Task Page Styles
 .dissSubmit ion-item:hover,
 .rewardSubmit ion-item:hover {
   --background: rgb(8, 74, 87);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .taskSubmit ion-item ion-input,

@@ -5,7 +5,7 @@ import RewardsContext from "./RewardsContext";
 
 export const RewardsProvider = (props) => {
   const [reward, setReward] = useState([]);
-  const baseUrl = "https://team-git-saved-backend-main.vercel.app/rewards/";
+  const baseUrl = "http://localhost:3001/rewards/";
 
   useEffect(() => {
     async function fetchData() {

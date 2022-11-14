@@ -7,11 +7,32 @@ import {
   IonButton,
   IonThumbnail,
 } from "@ionic/react";
-
+//import axios from "axios";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Welcome: React.FC = () => {
+  // function getAllQuotes() {
+  //   const options = {
+  //     method: "GET",
+  //     url: "https://timshim-quotes-v1.p.rapidapi.com/quotes",
+  //     headers: {
+  //       "X-RapidAPI-Key": "9297d6f297msh016859cc75ed013p148ec6jsn0d97302d4013",
+  //       "X-RapidAPI-Host": "timshim-quotes-v1.p.rapidapi.com",
+  //     },
+  //   };
+
+  //   axios
+  //     .request(options)
+  //     .then(function (response) {
+  //       console.log(response.data);
+  //     })
+  //     .catch(function (error) {
+  //       console.error(error);
+  //     });
+  // }
+  // console.log(getAllQuotes());
+
   return (
     <IonPage>
       <IonContent fullscreen>
