@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import UserContext from "./UserContext";
 
 export const UserProvider = (props) => {
-  const baseUrl = "http://localhost:3001/users/";
+  const baseUrl = "https://team-git-saved-backend-main.vercel.app/users/";
 
   const [user, setUser] = useState([]);
 
